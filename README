@@ -1,9 +1,9 @@
-Version Alpha in Development
+#Version Alpha in Development
 
-Use <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">jQuery Validate</a>, <a href="http://digitalbush.com/projects/masked-input-plugin/">jQuery Masket Input Plugin</a> in Defaults fields or Custom Fields on Admin Wordpress when create a post, a custom post or a page
+Use [jQuery Validate Plugin](http://bassistance.de/jquery-plugins/jquery-plugin-validation) and/or [jQuery Masket Input Plugin](http://digitalbush.com/projects/masked-input-plugin) in Defaults fields or Custom Fields on Admin Wordpress when create a post, a custom post or a page
 
 
-Alpha Version Samples, use in Settings Page (wp_options)
+#Alpha Version Samples, use in Settings Page (wp_options)
 //In Masket Samples
 {
 	"selector": "#title",
@@ -27,12 +27,11 @@ Alpha Version Samples, use in Settings Page (wp_options)
 	},
 	messages: {
 		post_title: {
-			required: "Favor preencher o Título do Post",
-			minlength: "O Título precisa ter no mínimo {0} caracateres"
+			required: "The Title is Required",
+			minlength: "Please enter at least {0} characters on Title."
 		},
 		content: {
-			required: "Favor preencha o Conteúdo",
-			minlength: "O Conteúdo precisa ter no mínimo {0} caracateres"
+			required: "The Content is Required",
+			minlength: "Please enter at least {0} characters on Content."
 		}					
-	}, 
-*/
+	},
