@@ -1,3 +1,38 @@
 Version Alpha in Development
 
-Use jQuery Validate, jQuery Masket Input in Defaults fields or Custom Fields on Admin Wordpress when create a post, a custom post or a page
+Use <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">jQuery Validate</a>, <a href="http://digitalbush.com/projects/masked-input-plugin/">jQuery Masket Input Plugin</a> in Defaults fields or Custom Fields on Admin Wordpress when create a post, a custom post or a page
+
+
+Alpha Version Samples, use in Settings Page (wp_options)
+//In Masket Samples
+{
+	"selector": "#title",
+	"value": "99/99/9999"
+},
+{
+	"selector": "#new-tag-post_tag",
+	"value": "99999-999"
+},
+
+//In jQuery Validate Samples
+ rules: {
+		post_title: {
+			required: true,
+			minlength: 2
+		},
+		content: {
+			required: true,
+			minlength: 5					
+		}
+	},
+	messages: {
+		post_title: {
+			required: "Favor preencher o Título do Post",
+			minlength: "O Título precisa ter no mínimo {0} caracateres"
+		},
+		content: {
+			required: "Favor preencha o Conteúdo",
+			minlength: "O Conteúdo precisa ter no mínimo {0} caracateres"
+		}					
+	}, 
+*/
