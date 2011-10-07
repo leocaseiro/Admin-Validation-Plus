@@ -8,10 +8,10 @@ Author: Leo Caseiro
 Author URI: http://leocaseiro.com.br
 */
 
-define( 'AVP_PLUGIN_BASENAME' 	, plugin_basename( __FILE__ ));
-define( 'AVP_PLUGIN_NAME' , trim( dirname( AVP_PLUGIN_BASENAME ), '/' ) );
-define( 'AVP_PLUGIN_DIR' 	, WP_PLUGIN_DIR . '/' . AVP_PLUGIN_NAME );
-define( 'AVP_PLUGIN_URL' 	, WP_PLUGIN_URL . '/' . AVP_PLUGIN_NAME );
+define( 'AVP_PLUGIN_BASENAME', plugin_basename( __FILE__ ));
+define( 'AVP_PLUGIN_NAME', trim( dirname( AVP_PLUGIN_BASENAME ), '/' ) );
+define( 'AVP_PLUGIN_DIR', WP_PLUGIN_DIR . '/' . AVP_PLUGIN_NAME );
+define( 'AVP_PLUGIN_URL', WP_PLUGIN_URL . '/' . AVP_PLUGIN_NAME );
 
 add_filter( 'admin_init', 'avp_start_plugin' );
 add_action( 'admin_menu', 'avp_config_page' );
@@ -24,6 +24,13 @@ function avp_options() {
 ?>
 	<div class="wrap">
 		<h2>Admin Validaton Plus - Settings</h2>
+		<?php 
+		$post_types=get_post_types('','names'); 
+		foreach ($post_types as $post_type ) {
+		echo '<p>'. $post_type. '</p>';
+		}
+		?>
+		
 		<form method="post" action="options.php">
 			
 			<?php settings_fields( 'admin-validation-plus-settings' ); ?>
