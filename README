@@ -1,6 +1,6 @@
 #Version Alpha in Development
 
-Use [jQuery Validate Plugin](http://bassistance.de/jquery-plugins/jquery-plugin-validation) and/or [jQuery Masket Input Plugin](http://digitalbush.com/projects/masked-input-plugin) in Defaults fields or Custom Fields on Admin Wordpress when create a post, a custom post or a page
+Use [jQuery Validate Plugin](http://bassistance.de/jquery-plugins/jquery-plugin-validation) and/or [jQuery Masket Input Plugin](http://digitalbush.com/projects/masked-input-plugin) in Defaults fields or Custom Fields on Admin WordPress when create a post, a custom post or a page
 
 
 #Alpha Version Samples, use in Settings Page (wp_options)
